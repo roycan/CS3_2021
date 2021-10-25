@@ -187,9 +187,16 @@
 															</article>
 														
 														
-													<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfO5Iyyy2fu1EBecUl9iDbSAIG5_1eeXPOhwVbqg5Tz7xN_jQ/viewform?embedded=true" width="640" height="906" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
 
-														
+<!-- modify this form HTML and place wherever you want your form -->
+<form id="my-form" action="https://formspree.io/f/myylalzo" method="POST">
+  <label>Email:</label>
+  <input type="email" name="email" />
+  <label>Message:</label>
+  <input type="text" name="message" />
+  <button id="my-form-button">Submit</button>
+  <p id="my-form-status"></p>
+</form>	
 														
 
 													</div>
@@ -316,5 +323,32 @@
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
 
+		
+		
+<!-- Place this script at the end of the body tag -->
+<script>
+    var form = document.getElementById("my-form");
+    
+    async function handleSubmit(event) {
+      event.preventDefault();
+      var status = document.getElementById("my-form-status");
+      var data = new FormData(event.target);
+      fetch(event.target.action, {
+        method: form.method,
+        body: data,
+        headers: {
+            'Accept': 'application/json'
+        }
+      }).then(response => {
+        status.innerHTML = "Thanks for your submission!";
+        form.reset()
+      }).catch(error => {
+        status.innerHTML = "Oops! There was a problem submitting your form"
+      });
+    }
+    form.addEventListener("submit", handleSubmit)
+</script>
+		
+		
 	</body>
 </html>
