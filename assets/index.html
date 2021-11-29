@@ -1,37 +1,16 @@
 <!DOCTYPE html>
-  
 <html>
-  
 <head>
-  
-  <style>
-  
-    p {
-  
-     display: none;  /* this hides the p element */            
-     background-color: green;
-  
-     padding: 20px;
-  
-    }
-  
-    div:hover p {     /* this will display the p element when user hovers over the div */
-     display: block;
-  
-    }
-  
-  </style>
-  
+<style>
+   /* please click on any of the textboxes to see the effect of input:focus */
+  input:focus {
+   background-color: yellow; 
+  }
+</style>
 </head>
-  
 <body>
-  
-  <div>Hover over me to show the p element
-  
-      <p>This is a p element</p>
-  
-  </div>
-  
+    First name: <input type="text" name="fname"><br> 
+    Last name: <input type="text" name="lname"><br>
+     <input type="submit" value="Submit">
 </body>
-  
-</html>
+</html> 
