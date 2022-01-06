@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style> 
+
+div.a0 {
+  width: 80px;
+  height: 80px;
+  background-color: green;
+}
+
+div.a {
+  width: 80px;
+  height: 80px;
+  background-color: red;
+  -ms-transform: translate(15px, 30px); /* IE 9 */
+  transform: translate(15px, 30px);
+}
+
+div.b {
+  width: 80px;
+  height: 80px;
+  background-color: red;
+  -ms-transform: rotate(20deg); /* IE 9 */
+  transform: rotate(20deg);
+}
+
+div.c {
+  width: 80px;
+  height: 80px;
+  background-color: red;
+  -ms-transform: scale(3, 0.5); /* IE 9 */
+  transform: scale(3, 0.5);
+}
+
+div.d {
+  width: 80px;
+  height: 80px;
+  background-color: red;
+  -ms-transform: scalex( 0.5); /* IE 9 */
+  transform: scalex( 0.5);
+}
+
+div.e {
+  width: 80px;
+  height: 80px;
+  background-color: red;
+  -ms-transform: scaley( 0.5); /* IE 9 */
+  transform: scaley( 0.5);
+}
+
+div.f {
+  width: 80px;
+  height: 80px;
+  background-color: red;
+  -ms-transform: skew(10deg, 20deg); /* IE 9 */
+  transform: skew(10deg, 20deg);
+}
+
+div.g {
+  width: 80px;
+  height: 80px;
+  background-color: red;
+  -ms-transform: skewx(30deg); /* IE 9 */
+  transform: skewx(30deg);
+}
+
+div.h {
+  width: 80px;
+  height: 80px;
+  background-color: red;
+  -ms-transform: skewy(30deg); /* IE 9 */
+  transform: skewy(30deg);
+}
+
+div.i {
+  width: 80px;
+  height: 80px;
+  background-color: red;
+  -ms-transform: matrix(1, 0.9, 0, 0.5, 50,50); /* IE 9 */
+  transform: matrix(1, 0.9, 0, 0.5, 50,50);
+}
+
+</style>
+</head>
+
+<body>
+
+<h1>The transform Property</h1>
+
+<h2> NO transform: :</h2>
+<div class="a0"> Hello World! </div>
+<div class="a0">Hello World!</div>
+<br>
+
+<h2>transform: translate(15px, 30px):</h2>
+<div class="a0"> Hello World! </div>
+<div class="a">Hello World!</div>
+<br>
+
+<h2>transform: rotate(20deg):</h2>
+<div class="a0">Hello World!</div>
+<div class="b">Hello World!</div>
+<br>
+
+<h2>transform: scale(3,0.5):</h2>
+<div class="a0">Hello World!</div>
+<div class="c"> Hello World!</div>
+
+<h2>transform: scalex(0.5):</h2>
+<div class="a0">Hello World!</div>
+<div class="d"> Hello World!</div>
+
+<h2>transform: scaley(0.5):</h2>
+<div class="a0">Hello World!</div>
+<div class="e"> Hello World!</div>
+
+<h2>transform: skew(10deg, 20deg):</h2>
+<div class="a0">Hello World!</div>
+<div class="f"> Hello World!</div>
+
+<h2>transform: skewx(20deg):</h2>
+<div class="a0">Hello World!</div>
+<div class="g"> Hello World!</div>
+
+<h2>transform: skewy( 20deg):</h2>
+<div class="a0">Hello World!</div>
+<div class="h"> Hello World!</div>
+
+<h2>transform: matrix(1, 0.9, 0, 0.5, 50,50):</h2>
+Using these 6 parameters, the element is scaled, skewed and translated, all at once. The parameters required are the values of scaleX(), skewY(), skewX(), scaleY(), translateX() and translateY(), respectively.
+<div class="a0">Hello World!</div>
+<div class="i"> Hello World!</div>
+
+</body>
+</html>

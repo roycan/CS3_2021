@@ -1,4 +1,49 @@
+<<<<<<< HEAD
+<<<<<<< HEAD
+
+# CS 3 - 2021 
+
+## Description 
+
+This website houses the excercises and projects of a scholar taking the Grade 9 Computer Science subject in PSHS-MC.
+
+## Installation
+
+Simply fork this project from either replit.com or github.com .
+
+## Usage
+
+Run the project in replit.com
+or go to the github pages link of the github project
+
+## Contribution
+
+Create a pull-request in github
+Or tell Sir Roy about what you want to contribute
+
+## Authors
+
+This site is put together by Sir Roy
+
+## license
+
+Please check the LICENSE.txt file
+
+## Acknowlegements
+
+We Acknowlegements the DOST-PSHS System for the learning guides. 
+We Acknowlege Ma'am Aline and the PSHS-MC CS 3 Team for course delivery details. 
+
+
+
+
+# Phantom by HTML5 UP
+=======
 Phantom by HTML5 UP
+>>>>>>> origin/main
+=======
+Phantom by HTML5 UP
+>>>>>>> origin/main
 html5up.net | @ajlkn
 Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 

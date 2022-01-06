@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Transition</title>
+		<meta charset="utf-8">
+		<meta name="description" content="Sample code to implement transition">
+	  	<meta name="keywords" content="transition">
+	  	<meta name="author" content="A.L. Mendoza">
+	  	<meta name="revised" content="01/13/2020">
+		<!-- responsive meta tag The meta tag below  will render the width of the page at the width of its own screen. -->
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<style>
+			* {
+			    box-sizing: border-box;  /* includes the border and padding in the width and height */
+			}
+
+			body {
+			    font-family: Arial, Helvetica, sans-serif;
+			}
+
+			/*--------------------- simple text and border effects on h1 ------------------------------ */
+			h1 { background: lightgray; 
+				color: white;
+				text-align: center; 
+				padding: 10px;
+				width: 50%;
+				border-radius: 25px;
+				margin: 0 auto;
+				border: 2px solid gray;
+				text-shadow: 2px 2px 5px #000000;
+				box-shadow: 10px 10px 7px grey;
+			}
+				
+			div {width: 100px;
+				height: 100px;
+				padding-top: 10px;
+				margin: 20px auto;
+				text-align:center;
+				color: white;
+			}
+				
+			.first {background-color:red}
+			.second {background-color:blue}
+			.third {background-color:red}
+
+			/*---------------- transition on width and heigth ------------------------*/
+			.first {
+				transition: width 2s, height 4s;
+			}
+
+			.first:hover {
+				width: 200px;
+				height: 200px;
+			}
+
+			/*----------------------- background color transition ----------*/
+			.second {
+			  -webkit-transition-duration: 2s;
+			  transition-duration: 2s;
+			  
+			  -webkit-transition-property: background-color;
+			  transition-property: background-color;
+			}
+
+			.second:hover { 
+				background-color: lightblue;
+				cursor: pointer
+			}
+
+			/*------------------ transform transition -----------------------*/
+			.third {
+				transition: transform 1s;
+			}
+
+			.third:hover { 
+				-webkit-transform: rotate(180deg); /* Safari */
+				transform: rotate(360deg)
+			}
+		</style>
+	</head>
+	<body>
+		<h1> transition property  </h1>
+		<div class="first"> width and height </div>
+		<div class="second"> background </br> color </div>
+		<div class="third"> transform </div>
+	</body>
+</html>
