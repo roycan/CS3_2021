@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
 
 # CS 3 - 2021 
 
@@ -38,12 +36,6 @@ We Acknowlege Ma'am Aline and the PSHS-MC CS 3 Team for course delivery details.
 
 
 # Phantom by HTML5 UP
-=======
-Phantom by HTML5 UP
->>>>>>> origin/main
-=======
-Phantom by HTML5 UP
->>>>>>> origin/main
 html5up.net | @ajlkn
 Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 
