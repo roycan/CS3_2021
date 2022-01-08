@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<!-- CSS Float -->
+<html>
+
+<head>
+	<title>On CSS Float </title>
+	<meta charset="UTF-8">
+	<meta name="author" content="My Name">
+	<meta name="keywords" content="HTML, CSS, Float">
+	<meta name="revised" content="08-01-2022">
+</head>
+<style>
+
+    #textpic div {
+     border: 4px solid black;
+     padding: 15px;
+    }
+    .img1{
+     float: right;
+    }
+    .clearfix{
+      overflow: auto;
+    }
+    .clearboth{
+      overflow: auto;
+      clear: both;
+    }
+
+
+
+	.topnav {
+		overflow: hidden;
+		background-color: orange;
+	}
+
+
+	.topnav a {
+		display: block;
+		float: left;
+		padding: 8px;
+		background-color: orange;
+		text-decoration: none;
+
+	}
+
+
+	p.float2 {
+		float: left;
+		width: 150px;
+		height: 70px;
+		margin: 0px;
+		background: #CCC;
+	}
+
+	#paragraphs p {
+		border: 1px solid red;
+	}
+
+	p.float3 {
+		float: left;
+		width: 150px;
+		height: 90px;
+		margin: 0px;
+		background: #CCC;
+	}
+
+	/* p{border: 1px solid red;} */
+	p.float4 {
+		float: left;
+		width: 150px;
+		height: 100px;
+		margin: 0px;
+		background: #CCC;
+	}
+
+	/* p{border: 1px solid red;} */
+	p.float5 {
+		float: left;
+		width: 150px;
+		height: 70px;
+		margin: 0px;
+		background: #CCC;
+	}
+
+
+  #container {
+      width: 960px;
+      margin: 0 auto;
+    }
+  #header {
+        padding: 30px;
+        background: #bbb;
+    }
+  #content {
+        float: left;
+        width: 660px;
+        background: #fff;
+    }
+  #navigation {
+        float: right;
+        width: 300px;
+        background: #eee;
+    }
+  #navigation a {
+        display: block;
+        margin: 0 0 10px 0;
+    }
+  #footer {
+        clear: both;
+        background: #aaa;
+        padding: 10px;
+    }
+
+
+</style>
+
+<body>
+
+	<nav class="topnav">
+		<a href="#">Home</a>
+		<a href="#">News</a>
+		<a href="#">Contact</a>
+		<a href="#">About</a>
+	</nav>
+
+
+	<main>
+    <section id="paragraphs">
+		<h2> Paragraphs Floating to the Left</h2>
+		<p>P1</p>
+		<p class="float2">P2</p>
+		<p class="float3">P3</p>
+		<p class="float4">P4</p>
+		<p class="float5">P5</p>
+		<p>P6</p>
+		<p>P7</p>
+		<p>P8</p>
+		<p>P9</p>
+		<p>P10</p>
+    </section>
+
+
+    <section id="textpic">
+      <h2> Text with Picture </h2>
+      <div>
+        <img class= "img1" src="../../images/pic01-bak.jpg" width="200">Lorem ipsum dolor
+        sit amet, consectetur adipiscing elit. Sed auctor placerat metus,
+        sit amet egestas dui rutrum sed. Aliquam eget fringilla metus,
+        vel pulvinar turpis. Mauris consectetur purus convallis nibh
+        consectetur, nec mattis nisi euismod.
+      </div>  
+
+      <div class="clearfix">
+        <img class= "img1" src="../../images/pic03-bak.jpg" width="200">Lorem ipsum dolor
+        sit amet, consectetur adipiscing elit. Sed auctor placerat metus,
+        sit amet egestas dui rutrum sed. Aliquam eget fringilla metus,
+        vel pulvinar turpis. Mauris consectetur purus convallis nibh
+        consectetur, nec mattis nisi euismod.
+      </div> 
+
+      <div class="clearfix">
+        <img class= "img1" src="../../images/pic04-bak.jpg" width="200">Lorem ipsum dolor
+        sit amet, consectetur adipiscing elit. Sed auctor placerat metus,
+        sit amet egestas dui rutrum sed. Aliquam eget fringilla metus,
+        vel pulvinar turpis. Mauris consectetur purus convallis nibh
+        consectetur, nec mattis nisi euismod.
+      </div> 
+    </section>
+
+
+
+    <h2> Sample 2-column Page Layout </h2>
+    <div id="container">
+      <div id="header">
+          <h1>Header</h1>
+      </div>
+      <div id="content">
+          <p> Lorem ipsum dolor sit amet,
+          consectetur adipiscing elit. Sed auctor placerat
+          metus, sit amet egestas dui rutrum sed. Aliquam eget
+          fringilla metus, vel pulvinar turpis. Mauris
+          consectetur purus convallis nibh consectetur, nec
+          mattis nisi euismod.</p>
+          
+          <p> Lorem ipsum dolor sit amet,
+          consectetur adipiscing elit. Sed auctor placerat
+          metus, sit amet egestas dui rutrum sed. Aliquam eget
+          fringilla metus, vel pulvinar turpis. Mauris
+          consectetur purus convallis nibh consectetur, nec
+          mattis nisi euismod.</p>
+        </div>
+      <div id="navigation">
+            <a href="#">Nav Item</a>
+            <a href="#">Nav Item</a>
+            <a href="#">Nav Item</a>
+            <a href="#">Nav Item</a>
+      </div>
+      <div id="footer">Footer</div>
+  </div>
+
+
+	</main>
+
+</body>
+
+</html>
